@@ -146,7 +146,7 @@ bool TicTacToe::isFull() {
   bool toEnd = true;
   for (int i = 0; i < BOARD_SIZE; i++) {
     if (!filledSpaces[i]) {
-      toEnd = false;
+      return false;
     }
   }
   return toEnd;
